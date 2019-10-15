@@ -1,0 +1,15 @@
+new DropdownButton(
+                  hint: Text('Pecahan'), // Not necessary for Option 1
+                  value: _selectedLocation,
+                  onChanged: (newValue) {
+                    setState(() {
+                      _selectedLocation = newValue;
+                    });
+                  },
+                  items: _locations.map((location) {
+                    return DropdownMenuItem(
+                      child: new Text(location),
+                      value: location,
+                    );
+                  }).toList(),
+                ),
