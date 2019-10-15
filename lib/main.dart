@@ -373,6 +373,23 @@ class _PenjualanState extends State<Penjualan> {
                     ],
                   ),
                 ),
+                new Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    RaisedButton(
+                      onPressed: () {},
+                      child: Text('Kembali', style: TextStyle()),
+                    ),
+                    RaisedButton(
+                      onPressed: () {},
+                      child: Text('Draft', style: TextStyle()),
+                    ),
+                    RaisedButton(
+                      onPressed: () {},
+                      child: Text('Simpan', style: TextStyle()),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
