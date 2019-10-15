@@ -1,74 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:dropdownfield/dropdownfield.dart';
-import './penjualan.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class Pemesananan extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'pusatriyal_penjualan',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Penjualan(),
-      routes: <String, WidgetBuilder>{
-        '/Penjualan': (BuildContext context) => new Penjualan(),
-        '/Pemesananan': (BuildContext context) => new Pemesananan(),
-      },
-    );
-  }
+  _PemesanananState createState() => _PemesanananState();
 }
 
-class Penjualan extends StatefulWidget {
-  @override
-  _PenjualanState createState() => _PenjualanState();
-}
-
-class _PenjualanState extends State<Penjualan> {
+class _PemesanananState extends State<Pemesananan> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
         // leading: new Icon(Icons.home),
         title: new Center(
-          child: new Text("Penjualan"),
-        ),
-      ),
-      drawer: Drawer(
-        child: ListView(
-          // Important: Remove any padding from the ListView.
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            DrawerHeader(
-              child: Text(
-                'PusatRiyal',
-                style: TextStyle(color: Colors.white, fontSize: 20.0),
-              ),
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-            ),
-            ListTile(
-                title: Text('Penjualan'),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Penjualan()),
-                  );
-                }),
-            ListTile(
-              title: Text('Pemesanan'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Pemesananan()),
-                );
-              },
-            ),
-          ],
+          child: new Text(
+            "Pemesanan",
+            style: new TextStyle(color: Colors.red),
+          ),
         ),
       ),
       body: ListView(
@@ -221,6 +168,46 @@ class _PenjualanState extends State<Penjualan> {
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: new Text(
+                    "Petugas Pengirim",
+                    style: new TextStyle(fontSize: 18.0),
+                  ),
+                ),
+                new ListTile(
+                  title: new TextField(
+                    decoration: new InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      hintText: 'Petugas Pengirim',
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: new Text(
+                    "Tanggal Pengiriman",
+                    style: new TextStyle(fontSize: 18.0),
+                  ),
+                ),
+                new ListTile(
+                  title: new TextField(
+                    decoration: new InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      hintText: 'Tanngal Pengiriman',
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: new Text(
                     "Customer",
                     style: new TextStyle(fontSize: 18.0),
                   ),
@@ -296,81 +283,6 @@ class _PenjualanState extends State<Penjualan> {
                       ),
                       hintText: 'Pilih Rate',
                     ),
-                  ),
-                ),
-                new Card(
-                  margin: const EdgeInsets.all(20.0),
-                  color: Colors.grey[300],
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: new Text(
-                          "Pecahan",
-                          style: new TextStyle(fontSize: 18.0),
-                        ),
-                      ),
-                      new ListTile(
-                        title: new TextField(
-                          decoration: new InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1.0),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1.0),
-                            ),
-                            hintText: 'Pilih Pecahan Uang',
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: new Text(
-                          "Stock",
-                          style: new TextStyle(fontSize: 18.0),
-                        ),
-                      ),
-                      new ListTile(
-                        title: new TextField(
-                          decoration: new InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1.0),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1.0),
-                            ),
-                            // hintText: 'Pilih Pecahan Uang',
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: new Text(
-                          "Nilai Sar",
-                          style: new TextStyle(fontSize: 18.0),
-                        ),
-                      ),
-                      new ListTile(
-                        title: new TextField(
-                          decoration: new InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1.0),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1.0),
-                            ),
-                            hintText: 'Nilai Sar',
-                          ),
-                        ),
-                      ),
-                    ],
                   ),
                 ),
               ],
