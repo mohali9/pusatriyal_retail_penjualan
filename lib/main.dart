@@ -476,6 +476,46 @@ class _PemesanananState extends State<Pemesananan> {
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: new Text(
+                    "Petugas Pengirim",
+                    style: new TextStyle(fontSize: 18.0),
+                  ),
+                ),
+                new ListTile(
+                  title: new TextField(
+                    decoration: new InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      hintText: 'Petugas Pengirim',
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: new Text(
+                    "Tanngal Pengiriman",
+                    style: new TextStyle(fontSize: 18.0),
+                  ),
+                ),
+                new ListTile(
+                  title: new TextField(
+                    decoration: new InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
+                      hintText: 'Tanngal Pengiriman',
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: new Text(
                     "Customer",
                     style: new TextStyle(fontSize: 18.0),
                   ),
