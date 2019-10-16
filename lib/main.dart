@@ -42,6 +42,7 @@ class _PenjualanState extends State<Penjualan> {
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: <Widget>[
+            // DRAWER
             DrawerHeader(
               child: Text(
                 'PusatRiyal',
@@ -78,6 +79,7 @@ class _PenjualanState extends State<Penjualan> {
             child: new Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
+                // TEXT
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: new Text(
@@ -85,6 +87,7 @@ class _PenjualanState extends State<Penjualan> {
                     style: new TextStyle(fontSize: 18.0),
                   ),
                 ),
+                // TEXTFIELD
                 new ListTile(
                   title: new TextField(
                     decoration: new InputDecoration(
@@ -298,9 +301,10 @@ class _PenjualanState extends State<Penjualan> {
                     ),
                   ),
                 ),
+// ======CARD======
                 new Card(
-                  margin: const EdgeInsets.all(20.0),
-                  color: Colors.grey[300],
+                  margin: const EdgeInsets.only(top: 20.0),
+                  color: Colors.grey[100],
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -373,22 +377,190 @@ class _PenjualanState extends State<Penjualan> {
                     ],
                   ),
                 ),
-                new Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    RaisedButton(
-                      onPressed: () {},
-                      child: Text('Kembali', style: TextStyle()),
-                    ),
-                    RaisedButton(
-                      onPressed: () {},
-                      child: Text('Draft', style: TextStyle()),
-                    ),
-                    RaisedButton(
-                      onPressed: () {},
-                      child: Text('Simpan', style: TextStyle()),
-                    ),
-                  ],
+// ======CARD======
+                new Card(
+                  margin: EdgeInsets.only(top: 15.0),
+                  child: Column(
+                    children: [
+                      ListTile(
+                        title: Text('Pecahan',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        subtitle: Text('My City, CA 99984'),
+                        leading: Icon(
+                          Icons.restaurant_menu,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text('Qty',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        leading: Icon(
+                          Icons.contact_phone,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Nilai SAR',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Harga(Rp)',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Total',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Hapus',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                // ======CARD======
+                new Card(
+                  margin: EdgeInsets.only(top: 15.0),
+                  child: Column(
+                    children: [
+                      ListTile(
+                        title: Text('Total',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        leading: Icon(
+                          Icons.restaurant_menu,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text('',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        leading: Icon(
+                          Icons.contact_phone,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'NaN',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          '',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          '0.00',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          '',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      Container(
+                        margin: EdgeInsets.only(top: 10.0),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            RaisedButton(
+                              color: Colors.white,
+                              onPressed: () {},
+                              child: Text('Sebelumnya', style: TextStyle()),
+                            ),
+                            RaisedButton(
+                              color: Colors.white,
+                              onPressed: () {},
+                              child: Text('Selanjutnya', style: TextStyle()),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+// ======BUTTON======
+                Divider(),
+                Container(
+                  margin: EdgeInsets.only(top: 10.0),
+                  child: new Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      RaisedButton(
+                        color: Colors.white,
+                        onPressed: () {},
+                        child: Text('Kembali', style: TextStyle()),
+                      ),
+                      RaisedButton(
+                        color: Colors.blue,
+                        onPressed: () {},
+                        child: Text('Draft',
+                            style: TextStyle(color: Colors.white)),
+                      ),
+                      RaisedButton(
+                        color: Colors.green,
+                        onPressed: () {},
+                        child: Text('Simpan',
+                            style: TextStyle(color: Colors.white)),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
