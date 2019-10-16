@@ -285,6 +285,267 @@ class _PemesanananState extends State<Pemesananan> {
                     ),
                   ),
                 ),
+                // ======CARD======
+                new Card(
+                  margin: const EdgeInsets.only(top: 20.0),
+                  color: Colors.grey[100],
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: new Text(
+                          "Pecahan",
+                          style: new TextStyle(fontSize: 18.0),
+                        ),
+                      ),
+                      new ListTile(
+                        title: new TextField(
+                          decoration: new InputDecoration(
+                            focusedBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.grey, width: 1.0),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.grey, width: 1.0),
+                            ),
+                            hintText: 'Pilih Pecahan Uang',
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: new Text(
+                          "Stock",
+                          style: new TextStyle(fontSize: 18.0),
+                        ),
+                      ),
+                      new ListTile(
+                        title: new TextField(
+                          decoration: new InputDecoration(
+                            focusedBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.grey, width: 1.0),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.grey, width: 1.0),
+                            ),
+                            // hintText: 'Pilih Pecahan Uang',
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: new Text(
+                          "Nilai Sar",
+                          style: new TextStyle(fontSize: 18.0),
+                        ),
+                      ),
+                      new ListTile(
+                        title: new TextField(
+                          decoration: new InputDecoration(
+                            focusedBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.grey, width: 1.0),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide:
+                                  BorderSide(color: Colors.grey, width: 1.0),
+                            ),
+                            hintText: 'Nilai Sar',
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+// ======CARD======
+                new Card(
+                  margin: EdgeInsets.only(top: 15.0),
+                  child: Column(
+                    children: [
+                      ListTile(
+                        title: Text('Pecahan',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        subtitle: Text('My City, CA 99984'),
+                        leading: Icon(
+                          Icons.restaurant_menu,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text('Qty',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        leading: Icon(
+                          Icons.contact_phone,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Nilai SAR',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Harga(Rp)',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Total',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'Hapus',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                // ======CARD======
+                new Card(
+                  margin: EdgeInsets.only(top: 15.0),
+                  child: Column(
+                    children: [
+                      ListTile(
+                        title: Text('Total',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        leading: Icon(
+                          Icons.restaurant_menu,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text('',
+                            style: TextStyle(fontWeight: FontWeight.w500)),
+                        leading: Icon(
+                          Icons.contact_phone,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          'NaN',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          '',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          '0.00',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      ListTile(
+                        title: Text(
+                          '',
+                          style: TextStyle(fontWeight: FontWeight.w500),
+                        ),
+                        leading: Icon(
+                          Icons.contact_mail,
+                          color: Colors.blue[500],
+                        ),
+                      ),
+                      Divider(),
+                      Container(
+                        margin: EdgeInsets.only(top: 10.0),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            RaisedButton(
+                              color: Colors.white,
+                              onPressed: () {},
+                              child: Text('Sebelumnya', style: TextStyle()),
+                            ),
+                            RaisedButton(
+                              color: Colors.white,
+                              onPressed: () {},
+                              child: Text('Selanjutnya', style: TextStyle()),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+// ======BUTTON======
+                Divider(),
+                Container(
+                  margin: EdgeInsets.only(top: 10.0),
+                  child: new Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      RaisedButton(
+                        color: Colors.white,
+                        onPressed: () {},
+                        child: Text('Kembali', style: TextStyle()),
+                      ),
+                      RaisedButton(
+                        color: Colors.blue,
+                        onPressed: () {},
+                        child: Text('Draft',
+                            style: TextStyle(color: Colors.white)),
+                      ),
+                      RaisedButton(
+                        color: Colors.green,
+                        onPressed: () {},
+                        child: Text('Simpan',
+                            style: TextStyle(color: Colors.white)),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
